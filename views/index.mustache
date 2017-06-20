@@ -13,10 +13,10 @@
         <div class="dir-user">
           <img src="{{avatar}}" alt="{{name}}'s avatar'" class="dir-user-image">
           <a href="user/{{id}}"><h2 class="dir-user-name">{{name}}</h2></a>
-          {{#job}} <!-- if university != null -->
+          {{#job}} <!-- if job != null -->
             <p class="employed">{{job}}, {{company}}</p>
           {{/job}}
-          {{^job}} <!-- if university is null -->
+          {{^job}} <!-- if job is null -->
             <p class="available">Available for Hire</p>
           {{/job}}
         </div>

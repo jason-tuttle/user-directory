@@ -1,9 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+a:link {
+  text-decoration: none;
 }
 
 .dir-container {
+  margin-top: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -14,7 +19,6 @@ body {
   flex: 0 0 20vw;
   border: 1px solid lightgray;
   text-align: center;
-  font-family: sans-serif;
   align-self: flex-start;
 }
 
@@ -24,9 +28,63 @@ body {
 }
 
 .dir-user-name {
-  color: #3A85FF;
+  color: #2C72B2;
 }
 
 .available {
   color: red;
+}
+
+.user-container {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-container {
+  flex: 0 1 30vw;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.user-img {
+  /*flex: 0 0 30vw;*/
+  width: 20vw;
+  height: 20vw;
+  float: right;
+  margin: 0;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.user-name {
+  flex: 1 0 60vw;
+  padding-left: 20px;
+}
+
+.user-name-big {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.user-heading {
+  flex: 0 1 30vw;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.user-detail {
+  flex: 1 0 60vw;
+  text-align: left;
+  padding-left: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
