@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.user {
+  flex: 1 0 20%;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.user-image {
+  width: 80%;
+  margin: auto;
+}
+
+.available {
+  color: red;
+}
