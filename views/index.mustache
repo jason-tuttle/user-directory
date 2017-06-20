@@ -2,23 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>User Directory</title>
+    <link rel="stylesheet" href="static/styles.css">
   </head>
   <body>
-    <div class="container">
+    <div class="dir-container">
       {{#users}}
-        <div class="user">
-          <img src="{{avatar}}" alt="{{name}}'s avatar'" class="user-image">
-          <h2 class="user-name">{{name}}</h2>
+        <div class="dir-user">
+          <img src="{{avatar}}" alt="{{name}}'s avatar'" class="dir-user-image">
+          <a href="user/{{id}}"><h2 class="dir-user-name">{{name}}</h2></a>
           {{#job}} <!-- if university != null -->
             <p class="employed">{{job}}, {{company}}</p>
           {{/job}}
           {{^job}} <!-- if university is null -->
             <p class="available">Available for Hire</p>
           {{/job}}
-          <p class="user-info">{{userInfo}}</p>
         </div>
-      {{/user}}
+      {{/users}}
     </div>
   </body>
 </html>

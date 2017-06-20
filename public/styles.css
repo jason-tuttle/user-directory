@@ -1,24 +1,30 @@
 body {
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.container {
+.dir-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
-.user {
-  flex: 1 0 20%;
-  border: 1px solid gray;
+.dir-user {
+  margin: 10px;
+  flex: 0 0 20vw;
+  border: 1px solid lightgray;
   text-align: center;
+  font-family: sans-serif;
+  align-self: flex-start;
 }
 
-.user-image {
+.dir-user-image {
   width: 80%;
   margin: auto;
+}
+
+.dir-user-name {
+  color: #3A85FF;
 }
 
 .available {
