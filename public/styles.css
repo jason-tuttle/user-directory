@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #cccccc;
 }
 a:link {
   text-decoration: none;
@@ -16,15 +17,23 @@ a:link {
 
 .dir-user {
   margin: 10px;
+  padding-top: 10px;
   flex: 0 0 20vw;
-  border: 1px solid lightgray;
+  border: 1px solid #2C72B2;
   text-align: center;
   align-self: flex-start;
+  background-color: white;
+}
+
+.dir-user h2 {
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid #2C72B2;
 }
 
 .dir-user-image {
   width: 80%;
   margin: auto;
+  box-shadow: 0 2px 5px gray;
 }
 
 .dir-user-name {
@@ -37,10 +46,12 @@ a:link {
 
 .user-container {
   margin-top: 50px;
+  padding: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
+  background-color: white;
 }
 
 .avatar-container {
